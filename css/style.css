@@ -39,14 +39,14 @@ nav:hover{
   background-color: #ffff !important;
 }
 .navbar-nav{
-  padding: 0px 8rem 0px 0px;
+  padding: 0px 6rem 0px 0px;
 }
 .navbar-nav li{
-  padding-right: 15px;
+  padding-right: 10px;
 }
 .nav-link{
   font-weight: 600 !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
   text-transform: uppercase;
   color: black !important;
 }

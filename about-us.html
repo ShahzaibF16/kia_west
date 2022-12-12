@@ -12,37 +12,119 @@
     <link rel="stylesheet"  href="css/inner.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-       
+   <!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+   <!-- MDB -->
+   <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+rel="stylesheet"
+/>
 	</head>
 	<body>
 
     <div class="main">
-      <header class="header">
-        <div class="content">
-            <a href="" class="logo">
-                <img src="image/log.png" alt="">
-            </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu mobile_view">
-              <li><a href="about-us.html">ABOUT</a></li>
-              <li><a href="car.html">CARS</a></li>
-              <li><a href="EMI.html">SHOPPING TOOLS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-          </div>
-      </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 999; --mdb-bg-opacity: 0.5;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <a class="navbar-brand ms-5" href="#">
+            <img src="./image/log.png" width="65%" alt="">
+          </a>
+          <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About<a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-mdb-toggle="dropdown" aria-expanded="false">Cars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <nav class="navbar dropdown-item navbar-expand-lg navbar-expand navbar-light bg-light">
+                    <!-- Container wrapper -->
+                    <div class="container-fluid">
+                      <!-- Toggle button -->
+                      <!-- Collapsible wrapper -->
+                      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                        <!-- Left links -->
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">CARENS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">SONET AE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">SELTOS X LINE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">SELTOS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">SONET</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">CARNIVAL</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">SONET X LINE</a>
+                          </li>
+                        </ul>
+                        <!-- Left links -->
+                      </div>
+                      <!-- Collapsible wrapper -->
+                    </div>
+                    <!-- Container wrapper -->
+                  </nav>
 
-      <section class="about_banner_home">
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shopping Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+    
+
+      <section class="about_banner_home" style="margin-top: -60px;">
         <div class="about_page_section">
           <div class="about_page_row">
             <div class="about_page_banner_col_outer">
 
                 <div class="about_page_banner_left_col_box">
                   <div class="about_page_banner_title"><span>About Us</span></div>
-                  <div class="about_page_inner_title"><span>Kia Dealership in India</span></div>
-                  <div class="about_page_inner_txt"><span>At West Coast, we are committed to delivering a car buying and ownership experience that Indian customers want and value. Our vision is aligned with Kia Motors' motto - The Power To Surprise.</span></div>
+                  <div class="about_page_inner_title"><span class="text-white">Kia Dealership in India</span></div>
+                  <div class="about_page_inner_txt"><span >At West Coast, we are committed to delivering a car buying and ownership experience that Indian customers want and value. Our vision is aligned with Kia Motors' motto - The Power To Surprise.</span></div>
                 </div>
+                <style>
+                  .site_button:hover{
+                    color: #000;
+                    background-color: #fff !important;
+                  }
+                </style>
                 <div class="about_page_banner_right_col_box">
                   <div class="about_page_banner_btn">
                     <a href="#" class="site_button"><span>BOOK A TEST DRIVE</span></a>
@@ -68,7 +150,7 @@
                   <div class="about_top_right">
                     <div class="about_top_right_col">
                       <div class="about_top_title"><span>Dealership</span></div>
-                      <div class="about_top_txt"><span>At West Coast, we make sure to improve our company culture time and again, to serve you with extreme professionalism and after-service that can make your experience with Kia in Ahmedabad unforgettable.</span></div>
+                      <div class="about_top_txt "><span>At West Coast, we make sure to improve our company culture time and again, to serve you with extreme professionalism and after-service that can make your experience with Kia in Ahmedabad unforgettable.</span></div>
                     </div>
                   </div>
                 </div>
@@ -96,7 +178,6 @@
 
       <section class="about_shop_home">
         <div class="about_shop_section">
-
           <div class="about_shop_title_row">
             <div class="about_shop_title_col">
               <div class="about_shop_title"><span>Service at this Shop</span></div>
@@ -115,7 +196,7 @@
                     <div class="about_shop_intro">
                       <div class="about_shop_inner_intro">
                         <div class="about_shop_title1"><span>Sales</span></div>
-                        <div class="about_shop_inner_text"><span>We have a nationwide network of 265 touchpoints, making sure you are close to No matter where you are in India, you are not very far from Kia. With a nationwide network of 265 Customer touchpoints, we strive to ensure customer experiences that exceed expectations.</span></div>
+                        <div class="about_shop_inner_text"><span>We have a nationwide network of 265 touchpoints, No matter where you are in India, you are not very far from Kia. With a nationwide network of 265 Customer touchpoints, we strive to ensure customer experiences that exceed expectations.</span></div>
                       </div>
                     </div>
                   </div>
@@ -187,7 +268,6 @@
               </div>
             </div>
 
-
             <div class="about_part_two_col">
               <div class="about_part_two_col_box">
 
@@ -196,17 +276,18 @@
                     <div class="about_part_block">
 
                       <div class="about_part_loaction_title">
-                        <div class="about_part_icon"><img src="image/red1.png"></div>
-                        <div class="about_part_icon_title"><span>Sales</span></div>
+                        <div class="about_part_icon_title">
+                          <i class="fa-solid fa-2x fa-location-dot" style="color: #BB162B;"></i>
+                          <span>Sales</span></div>
                       </div>
-
                       <div class="about_loaction_text">
                         <a href="https://www.google.com/maps/place/Sabarmati+Industrial+Society,+Near+Old+O.N.G.C+Office,+Beside+Indus+Hospital,+-380005,+Sabarmati,+Ahmedabad,+Gujarat+380005/@23.0923805,72.5915947,15z/data=!4m6!3m5!1s0x395e83c0a09ae1ab:0xa1e13fdf96c556a5!8m2!3d23.0923805!4d72.5915947!16s%2Fg%2F11f1yvhnwr" target="_blank">
                           <div class="about_location_left">
                             <img src="image/l3.png">
                           </div>
                           <div class="about_location_right">
-                            <div class="about_location_right_title"><span>West Coast Kia, Ambawadi</span></div>
+                            <div class="about_location_right_title">
+                              <span>West Coast Kia, Ambawadi</span></div>
                             <div class="about_location_right_address">B-G, 01-02, Shivalik Plaza,IIM Road, Panjra Pole,Ambawadi, Ahmedabad - 380015</div>
                             <div class="about_location_direction">
                               <a href="">Get Direction</a>
@@ -281,8 +362,9 @@
                     <div class="about_part_block">
 
                       <div class="about_part_loaction_title">
-                        <div class="about_part_icon"><img src="image/red1.png"></div>
-                        <div class="about_part_icon_title"><span>Sales</span></div>
+                        <div class="about_part_icon_title">
+                          <i class="fa-solid fa-2x fa-location-dot" style="color: #BB162B;"></i>
+                          <span>Service</span></div>
                       </div>
 
                       <div class="about_loaction_text">
@@ -379,64 +461,142 @@
          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>
       </div>
     </div>
+     <!-- Footer -->
+  <footer style="background-color: #05141F !important; color: #fff !important;"
+  class="text-center text-lg-start bg-light text-muted text-white">
+  <!-- Section: Links  -->
+  <section class="text-white">
+    <div class="container text-left text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="./image/logo.png" class="logo" alt="" width="200px">
+          <!-- Grid column -->
+          <div class="text-white" style="text-transform: uppercase; font-weight: 700;
+          font-size: 16px;">
+            <!-- Links -->
+            <p>
+              <a href="#!" class="text-reset">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Configure</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">find a Dealer</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Test Drive</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">contact us</a>
+            </p>
 
-    <section class="footer_bg">
-      <footer>
-        <div class="logo">
-          <img src="image/logo.png" alt="">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Right -->
+          <div class="text-white">
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-youtube-play"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+          <!-- Right -->
         </div>
-        <div class="footer_content">
-          <div class="footer_1">
-            <ul>
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <li><a href="car.html">CONFIGURE</a></li>
-              <li><a href="car.html">FINAD A DEALER</a></li>
-              <li><a href="test.html">TEST DRIVE</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="social">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              <i class="fa fa-pinterest" aria-hidden="true"></i>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div style="font-weight: 500; font-size: 12px; opacity: 0.7;"
+          class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-white pt-5 hover_effect">
+          <!-- Links -->
+          <p>
+            <a href="#!" class="text-reset">Configure</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Download Brocher</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Find A Dealer</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Kia Digi Connect</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Test Drive</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Book Online</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">EMI Calculator</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">My Order</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Kia Certified Pre-Owned</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 text-white pt-5">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h6>
+          <!-- <div class="input-group" style="width: 250px;">
+            <div class="form-outline" style="outline-color: #fff;">
+              <input type="search" id="form1" class="form-control" />
+              <label class="form-label" for="form1"></label>
             </div>
-          </div>
-          <div class="footer_2">
-            <!-- <img src="image/image 8.png" alt=""> -->
-            <ul>
-              <li><a href="car.html">Configure</a></li>
-              <li><a href="download.html">Download Brochure</a></li>
-              <li><a href="car.html">Find a Dealer</a></li>
-              <li><a href="car.html">Kia Digi Connect</a></li>
-              <li><a href="test.html">test Drive</a></li>
-              <li><a href="#">Book Online</a></li>
-              <li><a href="EMI.html">EMI Calculator</a></li>
-              <li><a href="#">My Order</a></li>
-              <li><a href="#">kia Certified Pre-Owned</a></li>
-            </ul>
-          </div>
-          <div class="footer_3">
-              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-              <div class="form-group_footer">
-                 <input type="email" name="email" id="email" placeholder="your@email.com" class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50" required />
-          
-                 <button type="button">OO</button>
-              </div>
-          </div>
-          <div class="footer_4">
-            <address>
-              West Coast,<br>
-              SG Highway North<br>
-              D1, GANESH MARIDIANS.G. HIGHWAY, OPP KARGIL PETROL PUMP<br>
-              9723316316<br>
-              Kia.sales2@karnavati.co<br>
-              west-coast-sghighway.in.kia<br>
-            </address>
+            <button type="button" style="background-color: #fff; color: #000 ;padding: 10px;">00
+            </button>
+          </div> -->
+          <div class="form-group_footer">
+            <input type="email" name="email" id="email" placeholder="your@email.com"
+              class=" bg-transparent border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
+              required />
+            <button type="button">OO</button>
           </div>
         </div>
-      </footer>
-    </section>
+      
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 text-white pt-5">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4"></h6>
+        <p>West Coast,
+          SG Highway North
+          D1, GANESH MARIDIANS.G. HIGHWAY, OPP KARGIL PETROL PUMP
+          9723316316
+          Kia.sales2@karnavati.co
+          west-coast-sghighway.in.kia</p>
+
+      </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+</footer>
+<!-- Footer -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
 
   </body>
 </html>

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/inner.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
@@ -38,7 +38,7 @@
           </a>
           <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">About<a>
+              <a class="nav-link" href="./about-us.html">About<a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -97,6 +97,7 @@
       </div>
     </nav>
     <!-- Navbar -->
+
     <div class="banner_section" style="margin-top:-60px">
       <div class="kia_bg banner_bg_section">
         <div class=" banner_row">
@@ -169,45 +170,7 @@
         </div>
       </main>
       <!-- SLIDER_END -->
-
     </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      new Swiper(".swiper", {
-        loop: true,
-        effect: 'coverflow',
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        speed: 400,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-
-        breakpoints: {
-          768: {
-            centeredSlides: false,
-            coverflowEffect: {
-              depth: 0,
-              rotate: 0,
-              stretch: -10,
-            }
-          }
-        },
-        autoplay: {
-          delay: 3000,
-        },
-        coverflowEffect: {
-          depth: 80,
-          rotate: 50,
-          stretch: 20,
-        }
-      })
-    </script>
-
-
     <div class="kia_third third_bg">
       <div class="third_bg_content">
         <h1>Service</h1>
@@ -447,6 +410,8 @@
       text-decoration: 2px solid underline #BB162B;
     }
   </style>
+
+
   <!-- Footer -->
   <footer style="background-color: #05141F !important; color: #fff !important;"
     class="text-center text-lg-start bg-light text-muted text-white">
@@ -464,7 +429,7 @@
             font-size: 16px;">
               <!-- Links -->
               <p>
-                <a href="#!" class="text-reset">About us</a>
+                <a href="./about-us.html" class="text-reset">About us</a>
               </p>
               <p>
                 <a href="#!" class="text-reset">Configure</a>
