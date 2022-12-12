@@ -405,7 +405,9 @@ button {
   height: 593px;
   margin: 155px 0 0 -40px;
 }
+/* Slider */
 
+/* Slider */
 
 .kia_second {
   text-align: center;
@@ -456,12 +458,16 @@ header h1 {
 }
 
 .slider_bg {
-  background: #efefef;
+  background: #ffff;
 }
 
-.slider_heading {}
+.slider_heading {
+  padding-left: 20px !important;
+
+}
 
 .slider_heading h1 {
+  text-align: left;
   font-family: "kiaSignature";
   font-style: normal;
   font-weight: 600;
@@ -790,7 +796,12 @@ a.slide_btn {
   position: relative;
   border-radius: 10px;
 }
-
+footer{
+  background-color: #05141F !important;
+}
+footer a {
+  color: #ffff !important;
+}
 /*.image-slider-container .swiper .swiper-slide .slide-con .slide-details {
     padding: 10px;
    overflow :hidden;
@@ -1545,7 +1556,7 @@ input::placeholder {
 .contact_para {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px !important;
   line-height: 26px;
   color: #05141F;
   margin-top: 59px;
@@ -1558,14 +1569,14 @@ input::placeholder {
 .contact_para p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   line-height: 26px;
   color: #05141F;
 }
 
 .contact_add {
   margin-top: 59px;
-  margin-right: 20px;
+  float: left;
+  /* margin-left: 170px; */
   padding: 130px 0px 0 0 !important;
   width: 70%;
   float: center !important;
@@ -2612,6 +2623,7 @@ span.tablink.active {
   }
 
   .contact_add {
+    padding-top: 0px !important;
     margin-top: 0px;
     padding: 0px 0 20px 0;
     width: 100%;
