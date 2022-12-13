@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/inner.css">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
@@ -42,85 +42,107 @@
       </ul>
     </div>
   </header>
-    <div class="quote-container">
-      <div class="quote">
-        <h1>Test<br>Drive</h1><br>
-        <p>Get a Test Drive Scheduled of your favourite car at your nearest Dealership.</p>
-        <br><br>
-        <h5>Choose Your Kia</h5><br>
-        <select class="cars">
-          <option disabled selected>Model</option>
-          <option value="CARENS">CARENS</option>
-          <option value="SONET AE">SONET AE</option>
-          <option value="SELTOS X LINE">SELTOS X LINE</option>
-          <option value="SELTOS">SELTOS</option>
-          <option value="SONET">SONET</option>
-          <option value="CARNIVAL">CARNIVAL</option>
-          <option value="SONET X LINE">SONET X LINE</option>
-        </select>
-      </div>
-      <style>
-        .cars option {
-          font-size: 16px !important;
-          color: #0000;
-        }
-      </style>
-      <div class="information">
+  <div class="quote-container">
+    <div class="quote">
+      <h1>Test<br>Drive</h1><br>
+      <p>Get a Test Drive Scheduled of your favourite car at your nearest Dealership.</p>
+      <br><br>
+      <h5>Choose Your Kia</h5><br>
+      <select class="cars">
+        <option disabled selected>Model</option>
+        <option value="CARENS">CARENS</option>
+        <option value="SONET AE">SONET AE</option>
+        <option value="SELTOS X LINE">SELTOS X LINE</option>
+        <option value="SELTOS">SELTOS</option>
+        <option value="SONET">SONET</option>
+        <option value="CARNIVAL">CARNIVAL</option>
+        <option value="SONET X LINE">SONET X LINE</option>
+      </select>
+    </div>
+    <style>
+      .cars option {
+        font-size: 16px !important;
+        color: #0000;
+      }
+    </style>
+    <div class="information">
+      <div class="info">
+        <hr>
         <div class="info">
-          <hr>
-          <div class="info">
-            <h1>Set Your Location to See Nearby Dealers,</h1><br>
-            <select class="ddl" id="state" name="state">
-              <option disabled selected>Select a State</option>
-              <option value="Gujarat">Gujarat</option>
-            </select>
-            <select class="ddl1"
-             id="city" name="city">
-              <option disabled selected>Select a City</option>
-              <option value="Ahmedabad">Ahmedabad</option>
-              <option value="Himmatnagar">Himmatnagar</option>
-            </select><br>
-            <select class=" ddl2" id="dealer" name="dealer">
-              <option>Select a Dealer</option>
-              <option value="west-coast-1">West Coast,SG Highway North</option>
-              <option value="west-coast-2">West Coast,SG Ambawdi</option>
-            </select>
+          <h1>Set Your Location to See Nearby Dealers,</h1><br>
+          <select class="ddl" id="state" name="state">
+            <option disabled selected>Select a State</option>
+            <option value="Gujarat">Gujarat</option>
+          </select>
+          <select class="ddl1" id="city" name="city">
+            <option disabled>Select a City</option>
+          </select><br>
+          <select class=" ddl2" id="dealer" name="dealer">
+            <option>Select a Dealer</option>
+            <!-- <option value="west-coast-1">West Coast,SG Highway North</option> -->
+            <!-- <option value="west-coast-2">West Coast,SG Ambawdi</option> -->
+          </select>
+          <script>
+            var state = document.getElementById("state")
+            var city = document.getElementById("city")
+            var dealer = document.getElementById("dealer")
 
-          </div>
+            var state_List = ["Gujarat"]
+            var city_List = ["Ahmedabad", "Himmatnagar"]
+            var ahmed_dealer = ["West Coast,SG Highway North", "West Coast,Ambawadi"]
+            var himmat_dealer = ["West Coast,Village motipura"]
+            for (var i of city_List) {
+              city.innerHTML += `<option value="${i}">${i}</option>`
+            }
+            console.log(city.value)
+            if (city.value == "Ahmedabad") {
+              for (var j of ahmed_dealer) {
+                dealer.innerHTML += `<option value="${j}">${j}</option>`
+              }
+            }else if (city.value == "Himmatnagar") {
+              for (var i of himmat_dealer) {
+                dealer.innerHTML += `<option value="${i}">${i}</option>`
+              }
+            }
+
+
+          </script>
 
         </div>
 
+      </div>
 
-        <div class="info1">
-          <hr>
-          <div class="form-contro">
-            <h1>Tell Us How to Reach You.</h1>
-            <input type="text" id="fname" name="firstname" placeholder="First Name"><input type="text" id="fname"
-              name="firstname" placeholder="Last Name"><br>
-            <!-- <input type="text" id="mobile" name="firstname" placeholder="Mobile Number"><button type="submit"
+
+      <div class="info1">
+        <hr>
+        <div class="form-contro">
+          <h1>Tell Us How to Reach You.</h1>
+          <input type="text" id="fname" name="firstname" placeholder="First Name"><input type="text" id="fname"
+            name="firstname" placeholder="Last Name"><br>
+          <!-- <input type="text" id="mobile" name="firstname" placeholder="Mobile Number"><button type="submit"
               class="circle-chevron"> Send OTP </button><br>
             <input type="text" id="mobile" name="firstname" placeholder="Mobile OTP"><button type="submit"
               class="circle-chevron">Verify </button><br> -->
-            <input type="text" id="email" name="firstname" placeholder="Email">
-            <div class="g-recaptcha" data-sitekey="6LcaDOEcAAAAAMMMjj-8-BQorfN6X5DJIScfRuFz"></div>
-            <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
-              data-action='submit'>Submit</button>
-
-          </div>
+          <input type="text" id="email" name="firstname" placeholder="Email">
+          <div class="g-recaptcha" data-sitekey="6LcaDOEcAAAAAMMMjj-8-BQorfN6X5DJIScfRuFz"></div>
+          <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+            data-action='submit'>Submit</button>
 
         </div>
 
+      </div>
 
-        <div class="info2">
 
-          <div class="condiction">
-            <label class="container">I accept the Terms & Conditions and Privacy Policy.
-              <input type="checkbox">
-              <span class="checkmar"></span>
-            </label>
-          </div>
+      <div class="info2">
 
-          <!-- <div class="submit">
+        <div class="condiction">
+          <label class="container">I accept the Terms & Conditions and Privacy Policy.
+            <input type="checkbox">
+            <span class="checkmar"></span>
+          </label>
+        </div>
+
+        <!-- <div class="submit">
             <button>
               <a href="#">
                 <div class="button">
@@ -128,91 +150,85 @@
                 </div>
               </a></button>
           </div> -->
-        </div>
-        <input 
-        style="background-color: #9BA1A5; color: #fff; padding: 10px 20px 10px 20px;
-        border: none; outline: none;"
-        type="submit" value="Request">
-
       </div>
+      <input style="background-color: #9BA1A5; color: #fff; padding: 10px 20px 10px 20px;
+        border: none; outline: none;" type="submit" value="Request">
+
     </div>
-
-    <section class="footer_bg">
-
-      <footer>
-        <div class="logo">
-          <img src="image/logo.png" alt="">
-        </div>
-
-        <div class="footer_content">
-          <div class="footer_1">
-            <ul>
-              <li><a href="about-us.html">ABOUT US</a></li>
-              <li><a href="car.html">CONFIGURE</a></li>
-              <li><a href="car.html">FINAD A DEALER</a></li>
-              <li><a href="test.html">TEST DRIVE</a></li>
-              <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-            <div class="social">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-              <i class="fa fa-youtube-play" aria-hidden="true"></i>
-              <i class="fa fa-pinterest" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="footer_2">
-            <!-- <img src="image/image 8.png" alt=""> -->
-            <ul>
-              <li><a href="car.html">Configure</a></li>
-              <li><a href="download.html">Download Brochure</a></li>
-              <li><a href="car.html">Find a Dealer</a></li>
-              <li><a href="car.html">Kia Digi Connect</a></li>
-              <li><a href="test.html">test Drive</a></li>
-              <li><a href="#">Book Online</a></li>
-              <li><a href="EMI.html">EMI Calculator</a></li>
-              <li><a href="#">My Order</a></li>
-              <li><a href="#">kia Certified Pre-Owned</a></li>
-            </ul>
-          </div>
-
-          <div class="footer_3">
-            <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-            <div class="form-group_footer">
-              <input type="email" name="email" id="email" placeholder="your@email.com"
-                class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
-                required />
-
-              <button type="button">OO</button>
-            </div>
-
-          </div>
-
-          <div class="footer_4">
-            <address>
-              West Coast,<br>
-              SG Highway North<br>
-              D1, GANESH MARIDIANS.G. HIGHWAY, OPP KARGIL PETROL PUMP<br>
-              9723316316<br>
-              Kia.sales2@karnavati.co<br>
-              west-coast-sghighway.in.kia<br>
-            </address>
-          </div>
-        </div>
-
-      </footer>
-    </section>
-
-
-    <script src="./css/main.js"></script>
-    <script src="java/main.js"></script>
-    <script src="java/slick.min.js"></script>
-
-
-  </body>
   </div>
 
-  <style>
+  <section class="footer_bg">
+
+    <footer>
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+
+      <div class="footer_content">
+        <div class="footer_1">
+          <ul>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="car.html">CONFIGURE</a></li>
+            <li><a href="car.html">FINAD A DEALER</a></li>
+            <li><a href="test.html">TEST DRIVE</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+          <div class="social">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="footer_2">
+          <!-- <img src="image/image 8.png" alt=""> -->
+          <ul>
+            <li><a href="car.html">Configure</a></li>
+            <li><a href="download.html">Download Brochure</a></li>
+            <li><a href="car.html">Find a Dealer</a></li>
+            <li><a href="car.html">Kia Digi Connect</a></li>
+            <li><a href="test.html">test Drive</a></li>
+            <li><a href="#">Book Online</a></li>
+            <li><a href="EMI.html">EMI Calculator</a></li>
+            <li><a href="#">My Order</a></li>
+            <li><a href="#">kia Certified Pre-Owned</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <div class="form-group_footer">
+            <input type="email" name="email" id="email" placeholder="your@email.com"
+              class="w-full bg-transparent py-3 pl-5 pr-20 border-2 border-solid border-black rounded-0 outline-none placeholder:text-black/50"
+              required />
+
+            <button type="button">OO</button>
+          </div>
+
+        </div>
+
+        <div class="footer_4">
+          <address>
+            West Coast,<br>
+            SG Highway North<br>
+            D1, GANESH MARIDIANS.G. HIGHWAY, OPP KARGIL PETROL PUMP<br>
+            9723316316<br>
+            Kia.sales2@karnavati.co<br>
+            west-coast-sghighway.in.kia<br>
+          </address>
+        </div>
+      </div>
+
+    </footer>
+  </section>
 
 
-  </style>
+  <script src="./app.js"></script>
+  <script src="java/main.js"></script>
+  <script src="java/slick.min.js"></script>
+  </div>
+
+</body>
+
+</html>
