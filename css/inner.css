@@ -638,6 +638,7 @@ select.State.extra_state {
     }
 
     select.ddl {
+        color: #0000;
         width: 100% !important;
         font-size: 14px !important;
         line-height: 15px !important;
